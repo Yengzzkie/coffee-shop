@@ -1,0 +1,81 @@
+@import "global";
+
+.hero {
+  background: url("../assets/coffee-circle.jpg") center/cover no-repeat;
+  height: 700px;
+  width: 100%;
+}
+
+.menu-heading {
+  background-color: var(--graphite);
+  color: #fff;
+  text-align: center;
+  font-size: 60px;
+  width: 300px;
+  height: 200px;
+  margin: auto;
+}
+
+.menu-links-container {
+  background-color: var(--graphite);
+  color: #fff;
+  text-align: center;
+  padding: 1.3rem 0;
+}
+
+.menu-links-container li {
+  display: inline-block;
+  color: #fff;
+  font-size: 21px;
+  text-transform: uppercase;
+  font-weight: var(--open-sans-regular);
+  border-left: 4px solid var(--nitro-blue);
+  padding: 0 1.3rem;
+}
+
+.menu-links-container li:hover {
+  color: var(--nitro-blue);
+}
+
+main > section {
+  background-color: #f7f7f7;
+  padding: 1.5rem 0;
+}
+
+main > section:nth-child(odd) {
+  background-color: var(--nitro-pink);
+}
+
+main h2 {
+  font-size: 60px;
+  font-weight: var(--open-sans-light);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  vertical-align: middle;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  text-align: center;
+  font-size: 33px;
+  font-weight: var(--open-sans-light);
+}
+
+.card .product-description {
+  font-style: italic;
+  font-size: 18px;
+  font-weight: var(--open-sans-regular);
+  text-align: center;
+  width: 30%;
+  margin: 1rem auto;
+}
+
+main span {
+  display: block;
+  color: var(--nitro-blue);
+  text-align: center;
+  margin: .5rem;
+}

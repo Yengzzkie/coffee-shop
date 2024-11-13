@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/landing.css" />
+    <title>Coffee Shop - Home</title>
+  </head>
+  <body>
+    <!-- NAVIGATION BAR -->
+    <header>
+      <div class="logo-container">
+        <img
+          class="logo"
+          src="./assets/coffee-beans-logo-and-footer.svg"
+          alt="coffee bean logo"
+        />
+        <a href="../index.html">
+          <h1 id="logo-header">nitro</h1>
+        </a>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="./pages/menu.html">MENU</a></li>
+          <li><a href="#">SHOP NOW</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <div class="hero">
+      <div class="hero__title--container">
+        <div class="hero__title">
+          <h1>Nitro Coffee</h1>
+          <p>
+            Coffee is a brewed drink prepared from roasted coffee beans, the
+            seeds of berries from certain Coffee species.
+          </p>
+          <div class="button__container">
+            <button class="shop-now-btn">SHOP NOW</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__image--container">
+        <img src="./assets/coffeebeans-hero.png" alt="coffee bag" />
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <h2 class="main__product-header">Our Products</h2>
+
+      <div class="card-container">
+        <article class="card">
+          <img src="./assets/coffeebeans.png" alt="coffee beans" />
+          <div class="card__content--container">
+            <div class="card_content--wrapper">
+              <h3>Coffee Beans</h3>
+              <p>Pack of 3</p>
+            </div>
+            <p class="price">$19</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="./assets/coldbrew.png" alt="cold brew" />
+          <div class="card__content--container">
+            <div class="card_content--wrapper">
+              <h3>Cold Brew</h3>
+              <p>1 can</p>
+            </div>
+            <p class="price">$5</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="./assets/inhousebrew.png" alt="in-house brew" />
+          <div class="card__content--container">
+            <div class="card_content--wrapper">
+              <h3>In-house Brew</h3>
+              <p>1 cup</p>
+            </div>
+            <p class="price">$3</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="button__container">
+        <button class="view-all-btn">VIEW ALL</button>
+      </div>
+
+      <!-- DISCOUNT BANNER -->
+      <div class="discount-banner__container">
+        <div class="banner__contents">
+          <div class="banner__contents--wrapper">
+            <h1>We're Different</h1>
+            <p>
+              We grow and roast our own beans. Every bean, every cup, every step
+              of the way, we strive for excellence.
+            </p>
+            <img src="./assets/planting.svg" alt="sprout" />
+            <img src="./assets/coffee-beans.svg" alt="beans" />
+            <img src="./assets/coffee-cup.svg" alt="cup" />
+          </div>
+          <div class="banner__image--wrapper">
+            <div class="image-border">
+              <img src="./assets/tiltedcan.png" alt="coffee-can" />
+            </div>
+          </div>
+        </div>
+
+        <p class="discount-banner">
+          Get 20% off your first order with code:
+          <span class="discount-code">FirstNitro</span>
+        </p>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <img class="footer__logo--left" src="./assets/coffee-beans-logo-and-footer.svg" alt="beans" />
+      <div class="footer__content--wrapper">
+        <div class="address">
+          <h3>Address</h3>
+          <p>503 Broadway Penthouse</p>
+          <p>New York</p>
+        </div>
+        <div class="hours">
+          <h3>Hours</h3>
+          <p><span>Monday - Friday:</span> 9am - 7pm</p>
+          <p><span>Saturday - Sunday:</span> 10am - 5pm</p>
+        </div>
+        <div class="social">
+          <h3>Social</h3>
+          <a href="https://www.facebook.com" target="_blank"
+            ><img src="./assets/Facebook-Icon.svg" alt="facebook"
+          /></a>
+          <a href="https://www.yelp.com" target="_blank"
+            ><img src="./assets/Yelp-Icon.svg" alt="yelp"
+          /></a>
+          <a href="https://www.instagram.com" target="_blank"
+            ><img src="./assets/Instagram-Icon.svg" alt="instagram"
+          /></a>
+        </div>
+      </div>
+      <img class="footer__logo--right" src="./assets/coffee-beans-logo-and-footer.svg" alt="beans" />
+    </footer>
+  </body>
+</html>

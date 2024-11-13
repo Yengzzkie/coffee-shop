@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fff0ed;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  color: #393939;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.3rem 2rem;
+}
+header .logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .logo-container h1 {
+  font-weight: 300;
+  font-size: 33px;
+}
+header nav {
+  padding: 0 0.2rem;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header nav ul li {
+  margin-right: 2.5rem;
+}
+header nav ul li a {
+  color: #393939;
+}
+header nav ul li a:hover {
+  color: #5bacc3;
+}
+
+.button__container {
+  display: inline-block;
+  position: relative;
+  background: #5bacc3;
+  width: 150px;
+  height: 50px;
+  margin: 1rem 0;
+}
+.button__container button {
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  background: transparent;
+  color: #fff;
+  border: 2px solid #393939;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.button__container button:active {
+  top: 0;
+  left: 0;
+}
+
+.hero {
+  background: url("../assets/coffee-circle.jpg") center/cover no-repeat;
+  height: 700px;
+  width: 100%;
+}
+
+.menu-heading {
+  background-color: var(--graphite);
+  color: #fff;
+  text-align: center;
+  font-size: 60px;
+  width: 300px;
+  height: 200px;
+  margin: auto;
+}
+
+.menu-links-container {
+  background-color: var(--graphite);
+  color: #fff;
+  text-align: center;
+  padding: 1.3rem 0;
+}
+
+.menu-links-container li {
+  display: inline-block;
+  color: #fff;
+  font-size: 21px;
+  text-transform: uppercase;
+  font-weight: var(--open-sans-regular);
+  border-left: 4px solid var(--nitro-blue);
+  padding: 0 1.3rem;
+}
+
+.menu-links-container li:hover {
+  color: var(--nitro-blue);
+}
+
+main > section {
+  background-color: #f7f7f7;
+  padding: 1.5rem 0;
+}
+
+main > section:nth-child(odd) {
+  background-color: var(--nitro-pink);
+}
+
+main h2 {
+  font-size: 60px;
+  font-weight: var(--open-sans-light);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  vertical-align: middle;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  text-align: center;
+  font-size: 33px;
+  font-weight: var(--open-sans-light);
+}
+
+.card .product-description {
+  font-style: italic;
+  font-size: 18px;
+  font-weight: var(--open-sans-regular);
+  text-align: center;
+  width: 30%;
+  margin: 1rem auto;
+}
+
+main span {
+  display: block;
+  color: var(--nitro-blue);
+  text-align: center;
+  margin: 0.5rem;
+}/*# sourceMappingURL=menu.css.map */
