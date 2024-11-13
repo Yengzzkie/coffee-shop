@@ -1,81 +1,96 @@
 @import "global";
 
+// HERO
 .hero {
+  @include flex-center();
   background: url("../assets/coffee-circle.jpg") center/cover no-repeat;
   height: 700px;
   width: 100%;
+
+  .menu-heading {
+    @include flex-center();
+    position: relative;
+    background: $primary;
+    color: $secondary;
+    font-size: 60px;
+    width: 300px;
+    height: 200px;
+    margin: auto;
+
+    span {
+      @include offset-border;
+    }
+  }
 }
 
-.menu-heading {
-  background-color: var(--graphite);
-  color: #fff;
-  text-align: center;
-  font-size: 60px;
-  width: 300px;
-  height: 200px;
-  margin: auto;
-}
-
+// MENU LINKS
 .menu-links-container {
-  background-color: var(--graphite);
-  color: #fff;
+  background-color: $primary;
+  color: $secondary;
   text-align: center;
   padding: 1.3rem 0;
+
+  li {
+    display: inline-block;
+    font-size: 21px;
+    text-transform: uppercase;
+    font-weight: $font-regular;
+    border-left: 4px solid $highlight;
+    padding: 0 1.3rem;
+
+    & a:hover {
+      color: $highlight;
+    }
+  }
 }
 
-.menu-links-container li {
-  display: inline-block;
-  color: #fff;
-  font-size: 21px;
-  text-transform: uppercase;
-  font-weight: var(--open-sans-regular);
-  border-left: 4px solid var(--nitro-blue);
-  padding: 0 1.3rem;
+// MAIN CONTENT
+main {
+
+  section {
+    background-color: #f7f7f7;
+    padding: 1.5rem 0;
+
+    .section__header {
+      font-size: 60px;
+      font-weight: $font-light;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .card {
+      vertical-align: middle;
+      margin-bottom: 1rem;
+
+      .product--title {
+        text-align: center;
+        font-size: 33px;
+        font-weight: var(--open-sans-light);
+      }
+
+      .product--description {
+        font-style: italic;
+        font-size: 18px;
+        font-weight: var(--open-sans-regular);
+        text-align: center;
+        width: 30%;
+        margin: 1rem auto;
+      }
+
+      span {
+        display: block;
+        color: $highlight;
+        font-weight: $font-regular;
+        font-size: 20px;
+        text-align: center;
+        margin: .5rem;
+      }
+    }
+  }
+
+  section:nth-child(odd) {
+    background: $primary-bg;
+  }
 }
 
-.menu-links-container li:hover {
-  color: var(--nitro-blue);
-}
 
-main > section {
-  background-color: #f7f7f7;
-  padding: 1.5rem 0;
-}
-
-main > section:nth-child(odd) {
-  background-color: var(--nitro-pink);
-}
-
-main h2 {
-  font-size: 60px;
-  font-weight: var(--open-sans-light);
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-
-.card {
-  vertical-align: middle;
-  margin-bottom: 1rem;
-}
-
-.card h3 {
-  text-align: center;
-  font-size: 33px;
-  font-weight: var(--open-sans-light);
-}
-
-.card .product-description {
-  font-style: italic;
-  font-size: 18px;
-  font-weight: var(--open-sans-regular);
-  text-align: center;
-  width: 30%;
-  margin: 1rem auto;
-}
-
-main span {
-  display: block;
-  color: var(--nitro-blue);
-  text-align: center;
-  margin: .5rem;
-}

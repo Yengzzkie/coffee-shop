@@ -12,6 +12,7 @@ body {
 
 a {
   text-decoration: none;
+  color: #fff;
 }
 
 li {
@@ -38,6 +39,9 @@ header .logo-container {
 header .logo-container h1 {
   font-weight: 300;
   font-size: 33px;
+}
+header .logo-container h1 a {
+  color: #393939;
 }
 header nav {
   padding: 0 0.2rem;
@@ -92,6 +96,7 @@ header nav ul li a:hover {
 }
 .hero__title--container .hero__title h1 {
   font-size: 60px;
+  font-weight: 300;
   margin-bottom: 1rem;
 }
 .hero__title--container .hero__title p {
@@ -179,9 +184,30 @@ main .discount-banner__container .banner__contents {
   justify-content: space-between;
 }
 main .discount-banner__container .banner__contents--wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   width: 35%;
+  text-align: left;
 }
-main .discount-banner__container .banner__contents--wrapper img {
+main .discount-banner__container .banner__contents--wrapper h1 {
+  font-weight: 300;
+  font-size: 60px;
+}
+main .discount-banner__container .banner__contents--wrapper p {
+  margin: 2rem 0;
+  line-height: 1.6;
+}
+main .discount-banner__container .banner__contents--wrapper .button__container {
+  margin: 3rem 0;
+}
+main .discount-banner__container .banner__contents--wrapper .banner__contents--images {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+main .discount-banner__container .banner__contents--wrapper .banner__contents--images img {
   width: 50px;
 }
 main .discount-banner__container .banner__contents .banner__image--wrapper {
@@ -190,7 +216,7 @@ main .discount-banner__container .banner__contents .banner__image--wrapper {
   width: 400px;
   height: 400px;
 }
-main .discount-banner__container .banner__contents .banner__image--wrapper .image-border {
+main .discount-banner__container .banner__contents .banner__image--wrapper .offset-border {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -201,7 +227,7 @@ main .discount-banner__container .banner__contents .banner__image--wrapper .imag
   height: 100%;
   border: 5px solid #5bacc3;
 }
-main .discount-banner__container .banner__contents .banner__image--wrapper .image-border img {
+main .discount-banner__container .banner__contents .banner__image--wrapper .offset-border img {
   width: 40%;
 }
 main .discount-banner__container .discount-banner {
