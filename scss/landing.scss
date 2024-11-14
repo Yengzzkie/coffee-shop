@@ -1,4 +1,4 @@
-@import "global";
+@import "./partials/global";
 
 /* HERO */
 .hero {
@@ -135,7 +135,7 @@ main {
       }
 
       .banner__image--wrapper {
-        background: url("../assets/coldbrewbackground.png") center / cover no-repeat;
+        background: url("../assets/images/coldbrewbackground.png") center / cover no-repeat;
         position: relative;
         width: 400px;
         height: 400px;
@@ -151,9 +151,12 @@ main {
 
           img {
             width: 40%;
+
+            &:hover {
+              animation: spin 1.5s infinite linear;
+            }
           }
         }
-        
       }
     }
 
@@ -164,6 +167,10 @@ main {
       text-align: center;
       padding: 40px 20px;
       margin: 10rem auto;
+
+      &:hover {
+        animation: glow 2s infinite linear ;
+      }
 
       .discount-code {
         font-weight: 700;
@@ -216,4 +223,22 @@ footer div h3 {
 
 .social img {
   margin-right: 5px;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes glow {
+  0% {
+    background: $primary;
+  }
+  50% {
+    background: $highlight;
+  }
+  100% {
+    background: $primary;
+  }
 }

@@ -1,9 +1,9 @@
-@import "global";
+@import "./partials/global";
 
 // HERO
 .hero {
   @include flex-center();
-  background: url("../assets/coffee-circle.jpg") center/cover no-repeat;
+  background: url("../assets/images/coffee-circle.jpg") center/cover no-repeat;
   height: 700px;
   width: 100%;
 

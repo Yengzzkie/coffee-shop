@@ -7,7 +7,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles/landing.css" />
+    <link rel="stylesheet" href="./scss/landing.css" />
     <title>Coffee Shop - Home</title>
   </head>
   <body>
@@ -16,17 +16,17 @@
       <div class="logo-container">
         <img
           class="logo"
-          src="./assets/coffee-beans-logo-and-footer.svg"
+          src="./assets/logos/coffee-beans-logo-and-footer.svg"
           alt="coffee bean logo"
         />
         <h1 id="logo-header"><a href="./index.html">nitro</a></h1>
       </div>
-
+      <!-- NAVIGATION LINKS -->
       <nav>
         <ul>
           <li><a href="#../index.html">ABOUT</a></li>
           <li><a href="./pages/menu.html">MENU</a></li>
-          <li><a href="#">SHOP NOW</a></li>
+          <li><a href="./pages/menu.html">SHOP NOW</a></li>
         </ul>
       </nav>
     </header>
@@ -41,13 +41,13 @@
             seeds of berries from certain Coffee species.
           </p>
           <div class="button__container">
-            <button class="shop-now-btn">SHOP NOW</button>
+            <a href="./pages/menu.html#hot-drinks"><button class="shop-now-btn">SHOP NOW</button></a>
           </div>
         </div>
       </div>
 
       <div class="hero__image--container">
-        <img src="./assets/coffeebeans-hero.png" alt="coffee bag" />
+        <img src="./assets/images/coffeebeans-hero.png" alt="coffee bag" />
       </div>
     </div>
 
@@ -57,7 +57,7 @@
 
       <div class="card-container">
         <article class="card">
-          <img src="./assets/coffeebeans.png" alt="coffee beans" />
+          <img src="./assets/images/coffeebeans.png" alt="coffee beans" />
           <div class="card__content--container">
             <div class="card_content--wrapper">
               <h3>Coffee Beans</h3>
@@ -67,7 +67,7 @@
           </div>
         </article>
         <article class="card">
-          <img src="./assets/coldbrew.png" alt="cold brew" />
+          <img src="./assets/images/coldbrew.png" alt="cold brew" />
           <div class="card__content--container">
             <div class="card_content--wrapper">
               <h3>Cold Brew</h3>
@@ -77,7 +77,7 @@
           </div>
         </article>
         <article class="card">
-          <img src="./assets/inhousebrew.png" alt="in-house brew" />
+          <img src="./assets/images/inhousebrew.png" alt="in-house brew" />
           <div class="card__content--container">
             <div class="card_content--wrapper">
               <h3>In-house Brew</h3>
@@ -89,7 +89,7 @@
       </div>
 
       <div class="button__container">
-        <button class="view-all-btn">VIEW ALL</button>
+        <a href="./pages/menu.html#all-menu"><button class="view-all-btn">VIEW ALL</button></a>
       </div>
 
       <!-- DISCOUNT BANNER -->
@@ -102,9 +102,9 @@
               of the way, we strive for excellence.
             </p>
             <div class="banner__contents--images">
-              <img src="./assets/planting.svg" alt="sprout" />
-              <img src="./assets/coffee-beans.svg" alt="beans" />
-              <img src="./assets/coffee-cup.svg" alt="cup" />
+              <img src="./assets/logos/planting.svg" alt="sprout" />
+              <img src="./assets/logos/coffee-beans.svg" alt="beans" />
+              <img src="./assets/logos/coffee-cup.svg" alt="cup" />
             </div>
             <div class="button__container">
               <button class="learn-more-btn">LEARN MORE</button>
@@ -112,7 +112,7 @@
           </div>
           <div class="banner__image--wrapper">
             <div class="offset-border">
-              <img src="./assets/tiltedcan.png" alt="coffee-can" />
+              <img src="./assets/images/tiltedcan.png" alt="coffee-can" />
             </div>
           </div>
         </div>
@@ -126,7 +126,7 @@
 
     <!-- FOOTER -->
     <footer>
-      <img class="footer__logo--left" src="./assets/coffee-beans-logo-and-footer.svg" alt="beans" />
+      <img class="footer__logo--left" src="./assets/logos/coffee-beans-logo-and-footer.svg" alt="beans" />
       <div class="footer__content--wrapper">
         <div class="address">
           <h3>Address</h3>
@@ -141,17 +141,17 @@
         <div class="social">
           <h3>Social</h3>
           <a href="https://www.facebook.com" target="_blank"
-            ><img src="./assets/Facebook-Icon.svg" alt="facebook"
+            ><img src="./assets/logos/Facebook-Icon.svg" alt="facebook"
           /></a>
           <a href="https://www.yelp.com" target="_blank"
-            ><img src="./assets/Yelp-Icon.svg" alt="yelp"
+            ><img src="./assets/logos/Yelp-Icon.svg" alt="yelp"
           /></a>
           <a href="https://www.instagram.com" target="_blank"
-            ><img src="./assets/Instagram-Icon.svg" alt="instagram"
+            ><img src="./assets/logos/Instagram-Icon.svg" alt="instagram"
           /></a>
         </div>
       </div>
-      <img class="footer__logo--right" src="./assets/coffee-beans-logo-and-footer.svg" alt="beans" />
+      <img class="footer__logo--right" src="./assets/logos/coffee-beans-logo-and-footer.svg" alt="beans" />
     </footer>
   </body>
 </html>

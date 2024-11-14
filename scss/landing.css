@@ -211,7 +211,7 @@ main .discount-banner__container .banner__contents--wrapper .banner__contents--i
   width: 50px;
 }
 main .discount-banner__container .banner__contents .banner__image--wrapper {
-  background: url("../assets/coldbrewbackground.png") center/cover no-repeat;
+  background: url("../assets/images/coldbrewbackground.png") center/cover no-repeat;
   position: relative;
   width: 400px;
   height: 400px;
@@ -230,6 +230,9 @@ main .discount-banner__container .banner__contents .banner__image--wrapper .offs
 main .discount-banner__container .banner__contents .banner__image--wrapper .offset-border img {
   width: 40%;
 }
+main .discount-banner__container .banner__contents .banner__image--wrapper .offset-border img:hover {
+  animation: spin 1.5s infinite linear;
+}
 main .discount-banner__container .discount-banner {
   background: #393939;
   color: #fff;
@@ -237,6 +240,9 @@ main .discount-banner__container .discount-banner {
   text-align: center;
   padding: 40px 20px;
   margin: 10rem auto;
+}
+main .discount-banner__container .discount-banner:hover {
+  animation: glow 2s infinite linear;
 }
 main .discount-banner__container .discount-banner .discount-code {
   font-weight: 700;
@@ -286,4 +292,21 @@ footer div h3 {
 
 .social img {
   margin-right: 5px;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes glow {
+  0% {
+    background: #393939;
+  }
+  50% {
+    background: #5bacc3;
+  }
+  100% {
+    background: #393939;
+  }
 }/*# sourceMappingURL=landing.css.map */
