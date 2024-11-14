@@ -231,7 +231,7 @@ main .discount-banner__container .banner__contents .banner__image--wrapper .offs
   width: 40%;
 }
 main .discount-banner__container .banner__contents .banner__image--wrapper .offset-border img:hover {
-  animation: spin 1.5s infinite linear;
+  animation: spin 2.5s infinite linear;
 }
 main .discount-banner__container .discount-banner {
   background: #393939;
