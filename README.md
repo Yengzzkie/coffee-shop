@@ -8,6 +8,6 @@ First project as part of Brainstation Bootcamp program.
 
 ## Screenshots
 
-![Demo](./assets/demo.png)
+![Demo](./assets/images/demo.png)
 
 
